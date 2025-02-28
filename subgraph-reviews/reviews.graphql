@@ -7,9 +7,11 @@ type Query {
 }
 
 type Review {
-  id: ID!
+  id: ID!!
   "Written text"
   comment: String
+  "A number from 1 - 5 with 1 being lowest and 5 being highest"
+  rating: Int
 }
 
 type Mutation {
