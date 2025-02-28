@@ -5,7 +5,7 @@ type Query {
   "The full list of locations presented by the Interplanetary Space Tourism department"
   locations: [Location!]!
   "The details of a specific location"
-  location(id: ID!): Location
+  location(id: ID!!): Location
 }
 
 type Location {
