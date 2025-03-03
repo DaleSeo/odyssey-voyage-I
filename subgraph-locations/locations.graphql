@@ -12,7 +12,7 @@ type Location {
   id: ID!
   "The name of the location 1"
   name: String!
-  "A short description about the location"
+  "A short description about the location 2"
   description: String!
   "The location's main photo as a URL"
   photo: String!
