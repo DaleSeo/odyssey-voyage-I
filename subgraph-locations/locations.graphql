@@ -2,17 +2,17 @@ extend schema
   @link(url: "https://specs.apollo.dev/federation/v2.7", import: ["@key"])
 
 type Query {
-  "The full list of locations presented by the Interplanetary Space Tourism department"
+  "🙏 The full list of locations presented by the Interplanetary Space Tourism department"
   locations: [Location!]!
-  "The details of a specific location"
+  "The details of a specific location :)"
   location(id: ID!): Location
 }
 
 type Location {
   id: ID!
-  "The name of the location"
+  "The name of the location 1"
   name: String!
-  "A short description about the location"
+  "A short description about the location 2"
   description: String!
   "The location's main photo as a URL"
   photo: String!
