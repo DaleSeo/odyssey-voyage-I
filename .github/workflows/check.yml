@@ -13,11 +13,12 @@ jobs:
     runs-on: ubuntu-latest
 
     # https://docs.github.com/en/actions/reference/environments
-    environment: apollo
+    environment: apollo-staging
 
     # https://docs.github.com/en/actions/reference/encrypted-secrets
     # https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobsjob_idstepsenv
     env:
+      APOLLO_REGISTRY_URL: ${{ secrets.APOLLO_REGISTRY_URL }}
       APOLLO_KEY: ${{ secrets.APOLLO_KEY }}
       APOLLO_VCS_COMMIT: ${{ github.event.pull_request.head.sha }}
 
